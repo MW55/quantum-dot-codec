@@ -3,10 +3,10 @@ docker build --tag quad_mosla .
 
 Run:
 encoding:
-docker run -v ~/projects/simon_mosla_code/mosla_quaternary/files/:/files quad_mosla -e -i files/mosla.txt -o files/mosla_encoded.txt --ecsymbols 2
+docker run -v </path/to/files/>:/files quad_mosla -e -i files/mosla.txt -o files/mosla_encoded.txt --ecsymbols 2
 
 decoding:
-docker run -v ~/projects/simon_mosla_code/mosla_quaternary/files/:/files quad_mosla -d -i files/mosla_encoded.txt -o files/mosla_decoded.txt --ecsymbols 2
+docker run -v </path/to/files/>:/files quad_mosla -d -i files/mosla_encoded.txt -o files/mosla_decoded.txt --ecsymbols 2
 
 
 Need a folder called "files" that needs to be mounted to the files folder of the docker image:
